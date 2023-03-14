@@ -119,6 +119,9 @@ apisix:
 
     #fallback_sni: "my.default.domain"      # If set this, when the client doesn't send SNI during handshake, the fallback SNI will be used instead
   enable_control: true
+  control:
+    ip: 0.0.0.0
+    port: 9090
   #control:
   #  ip: 127.0.0.1
   #  port: 9090
